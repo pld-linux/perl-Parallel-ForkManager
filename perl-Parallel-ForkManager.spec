@@ -9,7 +9,7 @@ Summary:	Parallel::ForkManager - A simple parallel processing fork manager
 Summary(pl):	Parallel::ForkManager - prosty zarz±dca tworzenia procesów do równoleg³ego przetwarzania
 Name:		perl-Parallel-ForkManager
 Version:	0.7.5
-Release:	0.3
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
