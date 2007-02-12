@@ -6,7 +6,7 @@
 %define	pdir	Parallel
 %define	pnam	ForkManager
 Summary:	Parallel::ForkManager - A simple parallel processing fork manager
-Summary(pl):	Parallel::ForkManager - prosty zarz±dca tworzenia procesów do równoleg³ego przetwarzania
+Summary(pl.UTF-8):   Parallel::ForkManager - prosty zarzÄ…dca tworzenia procesÃ³w do rÃ³wnolegÅ‚ego przetwarzania
 Name:		perl-Parallel-ForkManager
 Version:	0.7.5
 Release:	1
@@ -27,11 +27,11 @@ parallel where the number of processes to be forked off should be
 limited. Typical use is a downloader which will be retrieving
 hundreds/thousands of files.
 
-%description -l pl
-Ten modu³ jest przeznaczony do u¿ywania w operacjach, które mo¿na
-wykonywaæ równolegle, kiedy liczba procesów do uruchomienia powinna
-byæ ograniczona. Typowe wykorzystanie to narzêdzie do ¶ci±gania
-plików, które ma ci±gn±æ setki/tysi±ce plików.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest przeznaczony do uÅ¼ywania w operacjach, ktÃ³re moÅ¼na
+wykonywaÄ‡ rÃ³wnolegle, kiedy liczba procesÃ³w do uruchomienia powinna
+byÄ‡ ograniczona. Typowe wykorzystanie to narzÄ™dzie do Å›ciÄ…gania
+plikÃ³w, ktÃ³re ma ciÄ…gnÄ…Ä‡ setki/tysiÄ…ce plikÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
