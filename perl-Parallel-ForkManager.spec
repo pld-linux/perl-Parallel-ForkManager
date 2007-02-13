@@ -6,7 +6,7 @@
 %define	pdir	Parallel
 %define	pnam	ForkManager
 Summary:	Parallel::ForkManager - A simple parallel processing fork manager
-Summary(pl.UTF-8):   Parallel::ForkManager - prosty zarządca tworzenia procesów do równoległego przetwarzania
+Summary(pl.UTF-8):	Parallel::ForkManager - prosty zarządca tworzenia procesów do równoległego przetwarzania
 Name:		perl-Parallel-ForkManager
 Version:	0.7.5
 Release:	1
