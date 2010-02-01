@@ -3,8 +3,8 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Parallel
-%define	pnam	ForkManager
+%define		pdir	Parallel
+%define		pnam	ForkManager
 Summary:	Parallel::ForkManager - A simple parallel processing fork manager
 Summary(pl.UTF-8):	Parallel::ForkManager - prosty zarządca tworzenia procesów do równoległego przetwarzania
 Name:		perl-Parallel-ForkManager
@@ -16,8 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	ec12f36370329e2c235284f5cb4ed427
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
+Requires:	perl-dirs >= 2.1-19
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,8 +44,8 @@ plików, które ma ciągnąć setki/tysiące plików.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -58,7 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes TODO
-%dir %{perl_vendorlib}/Parallel
 %{perl_vendorlib}/Parallel/*.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
