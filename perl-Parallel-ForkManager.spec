@@ -8,12 +8,12 @@
 Summary:	Parallel::ForkManager - A simple parallel processing fork manager
 Summary(pl.UTF-8):	Parallel::ForkManager - prosty zarządca tworzenia procesów do równoległego przetwarzania
 Name:		perl-Parallel-ForkManager
-Version:	0.7.5
-Release:	2
+Version:	0.7.9
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ec12f36370329e2c235284f5cb4ed427
+# Source0-md5:	b49dbc6fafb697945d33ffbded0009f7
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 URL:		http://search.cpan.org/dist/Parallel-ForkManager/
@@ -50,7 +50,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-mv $RPM_BUILD_ROOT{%{perl_vendorlib}/Parallel/ForkManager/*.pl,%{_examplesdir}/%{name}-%{version}}
+install examples/*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
