@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Parallel
 %define		pnam	ForkManager
 Summary:	Parallel::ForkManager - A simple parallel processing fork manager
